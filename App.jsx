@@ -3,10 +3,10 @@ import { useEffect } from 'react';
 import './App.css';
 // import Nav from './nav';
 import Nav from './Nav.jsx';
-import SummaryCards from './SummaryCards';
-import ExpenseTable from './ExpenseTable';
-import BudgetPieChart from './BudgetPieChart';
-import CategoryBarChart from './CategoryBarChart';
+import SummaryCards from './SummaryCards.jsx';
+import ExpenseTable from './ExpenseTable.jsx';
+import BudgetPieChart from './BudgetPieChart.jsx';
+import CategoryBarChart from './CategoryBarChart.jsx';
 
 
 function App() {
