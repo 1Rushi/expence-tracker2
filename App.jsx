@@ -220,8 +220,8 @@ useEffect(() => {
 
 
       <div className="charts-wrapper" style={{ display: "flex", gap: "2rem" }}>
-        <BudgetPieChart.jsx expenses={expenses} />
-        <CategoryBarChart.jsx expenses={expenses} />
+        <BudgetPieChart expenses={expenses} />
+        <CategoryBarChart expenses={expenses} />
       </div>
 
       <ExpenseTable
