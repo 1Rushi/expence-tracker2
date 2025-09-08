@@ -105,8 +105,8 @@ useEffect(() => {
 
   return (
     <>
-      <Nav />
-      <SummaryCards
+      <Nav.jsx />
+      <SummaryCards.jsx
         budget={totalBudget}
         expense={totalExpense}
         remaining={remaining}
@@ -220,11 +220,11 @@ useEffect(() => {
 
 
       <div className="charts-wrapper" style={{ display: "flex", gap: "2rem" }}>
-        <BudgetPieChart expenses={expenses} />
-        <CategoryBarChart expenses={expenses} />
+        <BudgetPieChart.jsx expenses={expenses} />
+        <CategoryBarChart.jsx expenses={expenses} />
       </div>
 
-      <ExpenseTable
+      <ExpenseTable.jsx
         expenses={
           selectedCategory === "All"
             ? expenses
