@@ -381,3 +381,21 @@
     right: 20px;
   }
 }
+
+
+
+.category {
+  padding: 8px 12px;
+  margin: 4px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #eee;
+  transition: background 0.3s ease;
+}
+
+.category.active {
+  background: #28293e; /* highlight color */
+  color: #fff;
+  font-weight: bold;
+}

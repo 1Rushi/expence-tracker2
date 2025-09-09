@@ -49,8 +49,11 @@ useEffect(() => {
 
 
 
-  const totalExpense = expenses.reduce((sum, e) => sum + Number(e.amount), 0);
-  const remaining = totalBudget - totalExpense;
+  // const totalExpense = expenses.reduce((sum, e) => sum + Number(e.amount), 0);
+  // const remaining = totalBudget - totalExpense;
+  const totalExpense = expenses.reduce((sum, e) => sum + Math.max(0, Number(e.amount)), 0);
+
+const remaining = Math.max(0, totalBudget - totalExpense);
 
   const handleAddBudget = () => {
     const value = parseFloat(newBudget);
